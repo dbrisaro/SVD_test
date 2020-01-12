@@ -33,7 +33,7 @@ C = C/(ntime-1)         # I'm not sure if this step is absolutely necessary
 # SVD
 u, l, v = np.linalg.svd(C)
 
-# now we will compute regular SVD calculations to display then in a figure
+# now we will compute regular SVD calculations to display them in a figure
 
 # a) Explained variance: this info is stored in the diagonal matrix l
 # which contains the eigenvalues of each mode. The method makes it
@@ -57,7 +57,7 @@ PC_S1 = (A[:,0] - np.mean(A[:,0])) / np.std(A[:,0])     #standardized
 PC_T1 = (B[0,:] - np.mean(B[0,:])) / np.std(B[0,:])
 
 # d) Sometimes is not easy to interpret the amplitudes of the SVD spatial fields.
-# In this case we'll provide this information through correlation maps
+# In this case we'll provide this information through correlation maps.
 # We'll compute the so-called 'homogeneous maps' defined as the vector
 # correlation between the expansion coefficient of the k-th mode of a field
 # and the same values of the same field at each grid point.
